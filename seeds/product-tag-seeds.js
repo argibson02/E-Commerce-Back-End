@@ -1,4 +1,5 @@
 const { ProductTag } = require('../models');
+console.log(8);
 
 const productTagData = [
   {

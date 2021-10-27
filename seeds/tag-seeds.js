@@ -1,4 +1,5 @@
 const { Tag } = require('../models');
+console.log(9);
 
 const tagData = [
   {
