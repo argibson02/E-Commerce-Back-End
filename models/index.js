@@ -21,14 +21,14 @@ console.log(3);
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
   through: ProductTag,
-  as: 'products_under_tag',
+  foreignKey: 'product_id',
 });
 console.log(4);
 
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product, {
   through: ProductTag,
-  as: 'tags_on_product',
+  foreignKey: 'tag_id',
 });
 console.log(5);
 
