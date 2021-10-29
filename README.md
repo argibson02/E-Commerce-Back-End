@@ -11,29 +11,32 @@
 
 
 ## Description
-This is a mock e-commerce backend built with MySQL, Sequelize, Express.js, and Node.js.
+Pretend you own a store that sells wacky things and need to test the backend of your wacky website! Try out this mock e-commerce backend built with MySQL, Sequelize, Express.js, and Node.js.
 
 
-**[Click this link WATCH the E-commerce backend in action](https://watch.screencastify.com/v/hn5xgCNvNINj69kqOtQo)**
+**[Click this link WATCH the E-commerce backend in action](https://watch.screencastify.com/v/Vu1HEwMkHq81wdsKsX0w)**
 
-
-![Demo image of E-commerce backend](./images/ecommerce-demo.png)
 ![Demo GIF of E-commerce backend](./images/ecommerce-demo.gif)
 
  <br />
 
 
 ## Installation Instructions and Getting Started
-Node.js, MySQL2, Express.js, Sequelize, Bcrypt, and Dotenv all need to be installed. 
+Node.js, MySQL2, Express.js, Sequelize, and Dotenv all need to be installed. 
 
 Startup Instructions
-1) To start the application, navigate in a command console to the "db" folder that houses schema.sql. Enter in 'mysql -u root -p' and enter in your password. This will start up a MySQL instance. Then, enter into console 'source schema.sql', hit enter, and then 'source seeds.sql' and press enter again.
+1) Create a .env file with the following information:
+```
+DB_USER= *your username here*
+DB_PW= *your password here*
+DB_NAME='ecommerce_db'
+```
 
-2) Navigate to the folder that houses index.js and enter in 'node index.js'. This will build out tables in the database. Exit of that node session (*ctrl+c* in Windows).
+2) To start the application, navigate in a command console to the "db" folder that houses schema.sql. Enter in 'mysql -u root -p' and enter in your password. This will start up a MySQL instance. Then, enter into console 'source schema.sql', hit enter. Your SQL database is now created.
 
-3) Start a new session with 'node seeds/index.js'. This will seed the database with information. Exit of that node session (*ctrl+c* in Windows).
+3) Start a new console session and enter in 'npm run seed'. This will seed that database with information.
 
-4) Enter in 'node index.js' again. You are now ready to begin.
+4) Now enter in 'npm start'. You are now ready to begin. Your database should be available at http://localhost:3001/api/
 
 ## Built With
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -42,8 +45,6 @@ Startup Instructions
 * [MySQL2](https://www.npmjs.com/package/mysql2)
 * [Sequelize](https://www.npmjs.com/package/sequelize)
 * [Dotenv](https://www.npmjs.com/package/dotenv)
-* [Bcrypt](https://www.npmjs.com/package/bcrypt)
-
 
 ## Technologies Used
 * [Microsoft Visual Studio Code](https://code.visualstudio.com/)
